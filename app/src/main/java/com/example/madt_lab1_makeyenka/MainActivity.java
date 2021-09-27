@@ -8,20 +8,20 @@ import android.view.View;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
+    TextView tv;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        tv = (TextView)findViewById(R.id.tv);
     }
 
-    public void sendMessage(View view) {
-        TextView tv = (TextView)findViewById(R.id.textView);
+    public void changeText(View view) {
         tv.setText("You pressed the button");
     }
 
     public void changeColor(View view) {
-        TextView tv = (TextView)findViewById(R.id.textView);
         tv.setTextColor(Color.RED);
     }
 }

@@ -7,10 +7,10 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnChangeText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="sendMessage"
+        android:onClick="changeText"
         android:text="Change text"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -30,7 +30,7 @@
         app:layout_constraintVertical_bias="0.417" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btnChangeColor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="changeColor"
@@ -43,7 +43,7 @@
         app:layout_constraintVertical_bias="0.721" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="The app is running"
